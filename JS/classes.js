@@ -120,7 +120,7 @@ class Projectile {
             this.enemy.center.x - this.position.x
         )
 
-        const power = 5
+        const power = 15
         this.velocity.x = Math.cos(angle) * power
         this.velocity.y = Math.sin(angle) * power
 
@@ -128,6 +128,7 @@ class Projectile {
         this.position.y += this.velocity.y
     }
 }
+
 
 class Building {
     constructor({ position = { x: 0, y: 0 } }) {
@@ -150,7 +151,7 @@ class Building {
 
         c.beginPath()
         c.arc(this.center.x, this.center.y, this.radius, 0, Math.PI * 2)
-        c.fillStyle = 'rgba(0, 0, 255, 0.2)'
+        c.fillStyle = 'rgba(240, 248, 255, 0)'
         c.fill()
     }
 
@@ -167,7 +168,6 @@ class Building {
                 })
             )
         }
-
         this.frames++
     }
 }

@@ -38,7 +38,7 @@ const image = new Image()
 image.onload = () => {
     animate()
 }
-image.src = '/img/gameMap.png'
+image.src = 'IMG/GameMap.png'
 
 const enemies = []
 
@@ -58,12 +58,12 @@ let activeTile = undefined
 let enemyCount = 3
 let hearts = 10
 let coins = 100
-let shootingAudio = new Audio('/AUDIO/gun_fire.mp3');
-let gameOverAudio = new Audio('/AUDIO/game_over.mp3');
-let earnCoin = new Audio('/AUDIO/coin_earn.mp3');
-let deployTower = new Audio('/AUDIO/deployTower.mp3');
-let lovelyBgM = new Audio('/AUDIO/lovelyBgM.mp3');
-let defaultBgM = new Audio('/AUDIO/lovelyBgM.mp3');
+let shootingAudio = new Audio('AUDIO/gun_fire.mp3');
+let gameOverAudio = new Audio('AUDIO/game_over.mp3');
+let earnCoin = new Audio('AUDIO/coin_earn.mp3');
+let deployTower = new Audio('AUDIO/deployTower.mp3');
+let lovelyBgM = new Audio('AUDIO/lovelyBgM.mp3');
+let defaultBgM = new Audio('AUDIO/lovelyBgM.mp3');
 
 spawnEnemies(enemyCount)
 
@@ -138,7 +138,7 @@ function animate() {
                     }
                 }
 
-                console.log(projectile.enemy.health)
+                // console.log(projectile.enemy.health)
                 building.projectiles.splice(i, 1)
             }
         }
